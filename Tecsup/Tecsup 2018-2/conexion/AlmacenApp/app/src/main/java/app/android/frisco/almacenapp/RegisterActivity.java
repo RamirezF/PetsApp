@@ -1,4 +1,4 @@
-package pe.ebenites.almacenapp;
+package app.android.frisco.almacenapp;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -12,22 +12,19 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.arevalo.almacenapp.R;
-
 import java.io.ByteArrayOutputStream;
 
+import app.android.frisco.almacenapp.models.Producto;
+import app.android.frisco.almacenapp.services.ApiService;
+import app.android.frisco.almacenapp.services.ApiServiceGenerator;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;
-import pe.ebenites.almacenapp.models.Producto;
-import pe.ebenites.almacenapp.services.ApiService;
-import pe.ebenites.almacenapp.services.ApiServiceGenerator;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class RegisterActivity extends AppCompatActivity {
-
     private static final String TAG = RegisterActivity.class.getSimpleName();
 
     private ImageView imagenPreview;
@@ -40,6 +37,7 @@ public class RegisterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
         imagenPreview = findViewById(R.id.imagen_preview);
         nombreInput = findViewById(R.id.nombre_input);
         precioInput = findViewById(R.id.precio_input);

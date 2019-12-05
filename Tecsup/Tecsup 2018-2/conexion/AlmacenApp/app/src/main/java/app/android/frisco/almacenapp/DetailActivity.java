@@ -1,4 +1,4 @@
-package pe.ebenites.almacenapp;
+package app.android.frisco.almacenapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,12 +7,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.arevalo.almacenapp.R;
 import com.squareup.picasso.Picasso;
 
-import pe.ebenites.almacenapp.models.Producto;
-import pe.ebenites.almacenapp.services.ApiService;
-import pe.ebenites.almacenapp.services.ApiServiceGenerator;
+import app.android.frisco.almacenapp.models.Producto;
+import app.android.frisco.almacenapp.services.ApiService;
+import app.android.frisco.almacenapp.services.ApiServiceGenerator;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -21,7 +20,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private static final String TAG = DetailActivity.class.getSimpleName();
 
-    private Long id;
+    private Integer id;
 
     private ImageView fotoImage;
     private TextView nombreText;
@@ -38,7 +37,7 @@ public class DetailActivity extends AppCompatActivity {
         detallesText = (TextView)findViewById(R.id.detalles_text);
         precioText = (TextView)findViewById(R.id.precio_text);
 
-        id = getIntent().getExtras().getLong("ID");
+        id = getIntent().getExtras().getInt("ID");
         Log.e(TAG, "id:" + id);
 
         initialize();

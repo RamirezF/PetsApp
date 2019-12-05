@@ -15,7 +15,7 @@ public interface ApiService {
     @GET("/pet")
     Call<List<Pet>> getPet();
 
-    @GET("/user/{correo}")
-    Call<User> getUser(@Path("correo") String correo);
+    @GET("/api/user/")
+    Call<List<User>> getUser();
 
 }

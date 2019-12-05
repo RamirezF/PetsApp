@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegistroActivity">
+
+    <EditText
+        android:id="@+id/txt_pet_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese el nombre de su mascota"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <EditText
+        android:id="@+id/txt_pet_raza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese la raza de su mascota"
+        android:inputType="textEmailAddress"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/txt_pet_name"/>
+
+    <EditText
+        android:id="@+id/txt_pet_edad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Ingrese la edad de su mascota"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/txt_pet_raza"/>
+
+    <Button
+        android:id="@+id/btn_registrar_pet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar p Mascota"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"/>
+
+    <ImageView
+        android:id="@+id/img_pet"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/txt_pet_edad"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/user"
+        android:layout_centerHorizontal="true"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img_pet"
+        android:src="@android:drawable/ic_menu_camera" />
+</RelativeLayout>

@@ -89,4 +89,3 @@
         android:onClick="callRegister"/>
 
 </LinearLayout>
-

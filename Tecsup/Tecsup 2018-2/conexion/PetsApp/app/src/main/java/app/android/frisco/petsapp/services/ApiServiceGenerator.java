@@ -5,7 +5,6 @@ import java.lang.annotation.Annotation;
 import java.util.concurrent.TimeUnit;
 
 import app.android.frisco.petsapp.BuildConfig;
-import app.android.frisco.petsapp.interfaces.ApiService;
 import okhttp3.OkHttpClient;
 import okhttp3.ResponseBody;
 import okhttp3.logging.HttpLoggingInterceptor;

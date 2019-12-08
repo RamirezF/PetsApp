@@ -1,21 +1,16 @@
 package app.android.frisco.petsapp.clases;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
 import app.android.frisco.petsapp.R;
-import app.android.frisco.petsapp.interfaces.ApiService;
 
 public class PetAdapter extends RecyclerView.Adapter<PetAdapter.ViewHolder>  {
 
